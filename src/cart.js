@@ -28,7 +28,7 @@ const Cart = () => {
                         getData();
                       }}
                     >
-                      + Cart
+                      Delete
                     </button>
                   </div>
                 </div>
