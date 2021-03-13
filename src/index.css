@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: "Verdana";
+}
+.header {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  height: 6vh;
+  top: 0px;
+  background-color: gold;
+  color: white;
+}
+.title {
+  display: flex;
+  width: 95em;
+  height: 6vh;
+  align-items: center;
+  text-decoration: none;
+}
+.title h1 {
+  font-size: 3vmin;
+  color: black;
+  margin-left: 2vw;
+  font-weight: lighter;
+}
+.cart {
+  width: 1.5em;
+  height: 1.5em;
+}
+.cartbutton {
+  display: flex;
+  justify-content: center;
+  width: 5em;
+  height: 100%;
+  outline: none;
+  border: none;
+  align-items: center;
+  box-sizing: border-box;
+  background: gold;
+}
+.cartbutton:hover {
+  background-color: rgb(211, 172, 0);
+  cursor: pointer;
+}
+.userImage {
+  width: 2em;
+  border-radius: 50%;
+  height: 60%;
+  padding: 10px;
+}
+.userImage:hover {
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vmin;
+  background-color: rgb(36, 36, 36);
+}
+input {
+  height: 3vmin;
+  width: 30vw;
+  min-width: 200px;
+  background-color: rgba(163, 163, 163, 0.4);
+  border: none;
+  border-radius: 4px;
+  font-size: larger;
+  outline: none;
+  color: white;
+  padding: 5px;
+  transition-duration: 0.3s;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(184, 184, 184, 0.7);
+  font-size: large;
+}
+.count {
+  text-align: center;
+}
+.booklist {
+  display: grid;
+  gap: 0px;
+  padding: 1rem;
+  grid-template-columns: 33.333% 33.333% 33.333%;
+}
+.book {
+  display: block;
+  border: 2px solid rgb(165, 165, 165);
+  padding: 10px;
+  margin: -1px;
+  height: 30vh;
+  transition-duration: 0.2s;
+}
+.booktitle {
+  height: 45%;
+  overflow: scroll;
+}
+.author {
+  height: 20%;
+}
+.author h4 {
+  font-weight: lighter;
+}
+.priceandbutton {
+  display: inline-flex;
+  height: 30%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.priceandbutton h4 {
+  font-weight: lighter;
+}
+.addtocart {
+  height: 1.7em;
+  width: 4em;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 81, 0);
+}
+.addtocart:hover {
+  cursor: pointer;
+}
+.Addedtocart {
+  height: 1.7em;
+  width: 6em;
+  font-size: 2vmin;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: green;
+  background-color: rgba(0, 128, 0, 0.2);
+}
+.book:hover {
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  cursor: pointer;
+}
+.book:hover .booktitle {
+  color: blue;
+}
+.author:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1000px) {
+  .booklist {
+    grid-template-columns: 50% 50%;
+  }
+
+  .header {
+    height: 2.5em;
+  }
+  .book {
+    height: 12em;
+  }
+  /* .booktitle p {
+    font-size: 3vmin;
+  }
+  .author p {
+    font-size: 3vmin;
+    height: 100%;
+  }
+  .priceandbutton p {
+    font-size: 3vmin;
+  } */
+  .title {
+    width: 90em;
+    height: 2.5em;
+  }
+  .title h1 {
+    font-size: 2.5vw;
+  }
+  .cartbutton {
+    width: 10em;
+    height: 2.5em;
+  }
+  .cartbutton h1 {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .booklist {
+    grid-template-columns: 100%;
+  }
+  .header {
+    height: 2.5em;
+  }
+  input {
+    height: 4vmin;
+    font-size: medium;
+  }
+  .book {
+    height: 50vw;
+  }
+  .booktitle h3 {
+    font-size: 4.5vmin;
+  }
+  .author h4 {
+    font-size: 4vmin;
+    font-weight: bold;
+  }
+  .priceandbutton h4 {
+    font-size: 4vmin;
+    font-weight: bold;
+  }
+  .title {
+    width: 90em;
+    height: 2.5em;
+  }
+  .title h1 {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  .cartbutton {
+    width: 10em;
+    height: 2.5em;
+  }
+  .cartbutton h1 {
+    font-size: 4.5vw;
+  }
+  .Addedtocart {
+    height: 2em;
+    width: 6em;
+    font-size: 3.5vmin;
+  }
+}
